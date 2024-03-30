@@ -2,53 +2,24 @@ import React, { useEffect, useState, useRef } from 'react';
 import './ReelsComp.css';
 import VideoCard from './components/VideoCard';
 import BottomNavbar from './components/BottomNavbar';
-import TopNavbar from './components/TopNavbar';
+import stories1 from "./StoryProfiles/stories"
+import stories2 from './StoryProfiles/stories2'
+import stories3 from './StoryProfiles/stories3'
+import stories4 from './StoryProfiles/stories4'
 
 // This array holds information about different videos
 const videoUrls = [
   {
-    url: require('./videos/video1.mp4'),
-    profilePic: 'https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    username: 'csjackie',
-    description: 'Lol nvm #compsci #chatgpt #ai #openai #techtok',
-    song: 'Original sound - Famed Flames',
-    likes: 430,
-    comments: 13,
-    saves: 23,
-    shares: 1,
+    stories: stories1,
   },
   {
-    url: require('./videos/video2.mp4'),
-    profilePic: 'https://images.pexels.com/photos/1040881/pexels-photo-1040881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    username: 'dailydotdev',
-    description: 'Every developer brain @francesco.ciulla #developerjokes #programming #programminghumor #programmingmemes',
-    song: 'tarawarolin wants you to know this isnt my sound - Chaplain J Rob',
-    likes: '13.4K',
-    comments: 3121,
-    saves: 254,
-    shares: 420,
+    stories: stories2,
   },
   {
-    url: require('./videos/video3.mp4'),
-    profilePic: 'https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    username: 'wojciechtrefon',
-    description: '#programming #softwareengineer #vscode #programmerhumor #programmingmemes',
-    song: 'help so many people are using my sound - Ezra',
-    likes: 5438,
-    comments: 238,
-    saves: 12,
-    shares: 117,
+    stories: stories3,
   },
   {
-    url: require('./videos/video4.mp4'),
-    profilePic: 'https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    username: 'faruktutkus',
-    description: 'Wait for the end | Im RTX 4090 TI | #softwareengineer #softwareengineer #coding #codinglife #codingmemes ',
-    song: 'orijinal ses - Computer Science',
-    likes: 9689,
-    comments: 230,
-    saves: 1037,
-    shares: 967,
+    stories: stories4,
   },
 ];
 
@@ -105,9 +76,7 @@ function ReelsComp() {
         {videos.map((video, index) => (
           <VideoCard
             key={index}
-            username={video.username}
-            description={video.description}
-            song={video.song}
+            stories = {video.stories}
             likes={video.likes}
             saves={video.saves}
             comments={video.comments}
@@ -118,7 +87,7 @@ function ReelsComp() {
             autoplay={index === 0}
           />
         ))}
-        <BottomNavbar className="bottom-navbar" />
+        {/* <BottomNavbar className="bottom-navbar z-40" /> */}
       </div>
     </div>
   );

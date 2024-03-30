@@ -45,4 +45,20 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+/* Style the audio player */
+audio {
+  background-color: white; /* Set background color to transparent */
+  color: white; /* Set text color to white */
+}
 
+/* Style the playback controls */
+audio::-webkit-media-controls-panel {
+    background-color: transparent; /* Set controls background to transparent */
+}
+
+/* Style individual playback controls */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-mute-button,
+audio::-webkit-media-controls-volume-slider {
+    color: white; /* Set controls' symbols color to white */
+}

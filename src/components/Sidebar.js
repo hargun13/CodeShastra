@@ -16,6 +16,7 @@ import { MdChecklist, MdOutlineDashboard } from "react-icons/md";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoIosPeople } from "react-icons/io";
 import { FaPeopleGroup } from "react-icons/fa6";
+import { BsCameraReels } from "react-icons/bs";
 
 
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
@@ -116,8 +117,8 @@ export default function Sidebar({setLogin}) {
       const listItemsData = [
         { to: "/Dashboard", icon: <MdOutlineDashboard className='mr-3' size={25} />, text: "Dashboard" },
         { to: "/Networking", icon: <IoIosPeople className='mr-3' size={25} />, text: "Networking" },
-        { to: "/checklist", icon: <MdChecklist className='mr-3' size={25} />, text: "ComplyChecklist" },
-        { to: "/find", icon: <HiMagnifyingGlass className='mr-3' size={25} />, text: "ComplyFinder" },
+        { to: "/BytesMain", icon: <BsCameraReels className='mr-3' size={25} />, text: "Bytes" },
+        { to: "/GovSchemes", icon: <MdChecklist className='mr-3' size={25} />, text: "Gov. Schemes" },
         { to: "/consultant", icon: <FaPeopleGroup className='mr-3' size={25} />, text: "Consultants" },        
       ];
     

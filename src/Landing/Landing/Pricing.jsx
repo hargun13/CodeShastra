@@ -2,8 +2,8 @@ import React from 'react'
 
 const Pricing = () => {
   return (
-    <div>
-        <section class="relative md:py-24 py-16 container mx-auto px-6">
+    <div className='w-full h-auto'>
+        <section class="relative py-16 mx-auto px-6 w-[90vw] h-full">
             
             <div class="grid grid-cols-1 pb-8 text-center">
                 <h3
@@ -24,7 +24,7 @@ const Pricing = () => {
             <div class="grid grid-cols-1">
                 <div class="mt-6">
                 <div>
-                    <div class="grid lg:grid-cols-4 md:grid-cols-2 mt-8 gap-[30px]">
+                    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-[30px]">
                     <div
                         class="group border-b-[3px] border-gray-200 p-6 py-8 hover:border-orange-600 transition-all duration-500 ease-in-out hover:scale-105 relative overflow-hidden shadow rounded-md bg-gray-50 hover:bg-white h-fit"
                     >

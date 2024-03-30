@@ -13,6 +13,9 @@ import MainDash from './Main/MainDash/Home';
 import UserProfile from './Main/Profile/UserProfile'
 
 import Networking from './Main/Networking/Networking';
+import GovScehems from './Main/GovSchemes/GovScehems';
+import BytesMain from './Main/Bytes/BytesMain'
+import Bytes from './Main/Bytes/Bytes'
 
 function App() {
 
@@ -32,6 +35,9 @@ function App() {
           <Route path='/Dashboard' element={<MainDash/>} />
           <Route path='/Profile' element={<UserProfile/>} />
           <Route path='/Networking' element={<Networking/>} />
+          <Route path='/GovSchemes' element={<GovScehems/>} />
+          <Route path='/BytesMain' element={<BytesMain/>} />
+          <Route path='/Bytes' element={<Bytes/>} />
         </Routes>
       </AuthContextProvider>
     </div>
