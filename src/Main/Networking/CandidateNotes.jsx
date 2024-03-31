@@ -43,7 +43,7 @@ function CircularProgressWithLabel(props) {
 const CandidateNotes = () => {
   const [progress, setProgress] = useState(90);
   const [sentiment, setSentiment] = useState('');
-  const openai = new OpenAI({ apiKey: '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' , dangerouslyAllowBrowser: true });
+  // const openai = new OpenAI({ apiKey: '' , dangerouslyAllowBrowser: true });
 
   // async function main() {
   //   const transcription = await openai.audio.transcriptions.create({
