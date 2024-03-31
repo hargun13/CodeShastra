@@ -16,6 +16,7 @@ import Networking from './Main/Networking/Networking';
 import GovScehems from './Main/GovSchemes/GovScehems';
 import BytesMain from './Main/Bytes/BytesMain'
 import Bytes from './Main/Bytes/Bytes'
+import Analytics from './Main/Analytics/Analytics'
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Route path='/GovSchemes' element={<GovScehems/>} />
           <Route path='/BytesMain' element={<BytesMain/>} />
           <Route path='/Bytes' element={<Bytes/>} />
+          <Route path='/Analytics' element={<Analytics/>} />
         </Routes>
       </AuthContextProvider>
     </div>

@@ -17,6 +17,7 @@ import { HiMagnifyingGlass } from "react-icons/hi2";
 import { IoIosPeople } from "react-icons/io";
 import { FaPeopleGroup } from "react-icons/fa6";
 import { BsCameraReels } from "react-icons/bs";
+import { FaChartSimple } from "react-icons/fa6";
 
 
 import NotificationsOutlinedIcon from "@mui/icons-material/NotificationsOutlined";
@@ -119,7 +120,7 @@ export default function Sidebar({setLogin}) {
         { to: "/Networking", icon: <IoIosPeople className='mr-3' size={25} />, text: "Networking" },
         { to: "/BytesMain", icon: <BsCameraReels className='mr-3' size={25} />, text: "Bytes" },
         { to: "/GovSchemes", icon: <MdChecklist className='mr-3' size={25} />, text: "Gov. Schemes" },
-        { to: "/consultant", icon: <FaPeopleGroup className='mr-3' size={25} />, text: "Consultants" },        
+        { to: "/Analytics", icon: <FaChartSimple className='mr-3' size={25} />, text: "Analytics" },        
       ];
     
       return (

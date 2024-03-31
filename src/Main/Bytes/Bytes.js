@@ -119,7 +119,7 @@ function App() {
             autoplay={index === 0}
           />
         ))}
-        <BottomNavbar className="bottom-navbar" />
+        {/* <BottomNavbar className="bottom-navbar" /> */}
       </div>
     </div>
   );

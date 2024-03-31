@@ -59,7 +59,7 @@ const Hero = () => {
                 </div>
 
                 <h1 className='md:text-[45px] text-5xl font-semibold py-3 '>Empowering Growth </h1> 
-                <h1 className='md:text-[45px] text-5xl font-semibold pt-3 -ml-4'><span className='bg-[#FF6600] px-4 rounded-full text-white'>with Engaze</span></h1>
+                <h1 className='md:text-[45px] text-5xl font-semibold pt-3 -ml-4'><span className='bg-[#FF6600] px-4 rounded-full text-white'>with SkillX</span></h1>
 
                 <p className="text-sm py-8 pr-40 font-bold my-5">
                 Engaze introduces groundbreaking compliance solutions, empowering businesses to seamlessly navigate intricate regulatory frameworks and unlock their full potential in tomorrow’s dynamic business environment. 
@@ -79,7 +79,7 @@ const Hero = () => {
 
             <div className='md:w-[45%] flex justify-center'>
                     
-                <Spline scene="https://prod.spline.design/mdqYKI0OkRxmlXcn/scene.splinecode" className='
+                <Spline scene="https://prod.spline.design/2aGpQfUAMB6aPwhO/scene.splinecode" className='
                 h-full' style={{height:"75vh", width:"60%"}}/>
 
             </div>

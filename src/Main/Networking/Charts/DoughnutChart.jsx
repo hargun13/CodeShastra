@@ -1,5 +1,7 @@
 import React from "react";
 import { Doughnut } from "react-chartjs-2";
+import {Chart, ArcElement} from 'chart.js'
+Chart.register(ArcElement);
 
 const data = {
   labels: ["Critical case", "Urgent case", "Errors", "Reviewed", "Success"],
@@ -21,13 +23,25 @@ const data = {
 const DoughnutChart = () => {
   return (
     <div style={{ width: "100px", height: "100px" }}>
-      <h2>React Doughnut with Text Example</h2>
       <Doughnut
         data={data}
         options={{
           plugins: {
-            legend: { display: true, position: "right" }
-          }
+            legend: { display: true, position: "right" },
+            tooltip: {
+              enabled: true,
+              displayColors: false,
+              callbacks: {
+                label: function (tooltipItem, data) {
+                  const dataset = data.datasets[tooltipItem.datasetIndex];
+                  const total = dataset.data.reduce((acc, value) => acc + value, 0);
+                  const value = dataset.data[tooltipItem.index];
+                  const percentage = ((value / total) * 100).toFixed(2);
+                  return `${data.labels[tooltipItem.index]}: ${percentage}%`;
+                },
+              },
+            },
+          },
         }}
       />
     </div>

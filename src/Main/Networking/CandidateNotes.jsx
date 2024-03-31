@@ -4,6 +4,8 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import TextArea from './TextArea'
 import Doughnut from './Charts/DoughnutChart'
+import { TiTickOutline } from "react-icons/ti";
+
 
 function CircularProgressWithLabel(props) {
   return (
@@ -38,12 +40,17 @@ const CandidateNotes = () => {
     <div className='w-[30%] h-[85vh] flex flex-col items-between justify-between'>
         
         <div className='rounded-xl h-[42vh] bg-white shadow-2xl p-5'>
-          <div>
-            <CircularProgressWithLabel value={progress} size={95}/>
+          <div className='flex gap-5'>
+            <CircularProgressWithLabel value={progress} size={100}/>
             <Doughnut />
+            <p className='text-center mt-5'>
+              <p className='text-2xl font-bold'>88/100</p>
+              <p className='text-sm'>Learning Streak</p>
+            </p>
           </div>
-          <div>
 
+          <div className='mt-7'>
+              <p className='border-b border-gray-200 pb-2 flex items-center gap-2 font-bold text-green-500 text-xl'><TiTickOutline size={30}/>80% Profile Match!!</p>
           </div>
 
         </div>

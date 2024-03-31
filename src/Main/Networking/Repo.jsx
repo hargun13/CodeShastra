@@ -77,14 +77,14 @@ const Repo = () => {
             {foldernames.map((folder, index) => (
             <div
                 className={`flex flex-col items-center justify-center text-center m-3 ${
-                    hoveredFolderIndex === index ? 'bg-green-100' : ''
+                    hoveredFolderIndex === index ? 'bg-blue-100' : ''
                 }`}
                 key={index}
                 data-index={index} // Add data-index attribute to identify folder index
                 onMouseEnter={() => setHoveredFolderIndex(index)} // Update hoveredFolderIndex on mouse enter
                 onMouseLeave={onDragLeave} // Reset hoveredFolderIndex on mouse leave
             >
-                <FaFolder size={40}/>
+                <FaFolder  size={40} style={{color:"#FEEAA3"}}/>
                 <p className='text-sm w-20'>{folder.name}</p>
             </div>
             ))}
