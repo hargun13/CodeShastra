@@ -61,8 +61,8 @@ const BarChart = () => {
   };
 
   return (
-    <div className="w-full    ">
-      <Bar data={data} height={250} width={300} options={options} className="mx-5"></Bar>
+    <div>
+      <Bar data={data} height={250} options={options} className="mx-5"></Bar>
     </div>
   );
 };

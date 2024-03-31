@@ -23,11 +23,11 @@ const HospitalData = () => {
           <SingleLineChart />
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-3 w-full h-[50vh]">
-          <div className="flex items-center justify-center w-full bg-white shadow-xl shadow-slate-300 h-[75vh]">
+        {/* <div className="flex flex-col items-center justify-center gap-3 w-full ">
+          <div className="flex items-center justify-center bg-white shadow-xl w-1/2 shadow-slate-300">
             <BarChart />
           </div>
-        </div>
+        </div> */}
 
       </section>
 
