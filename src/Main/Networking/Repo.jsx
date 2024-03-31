@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FaFolder } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Button } from '@mui/material';
+import ModalBox from './ModalBox';
 
 const Repo = () => {
   const [droppedStories, setDroppedStories] = useState([]);
@@ -54,19 +56,19 @@ const Repo = () => {
         name: "Waitlisted Applicants"
     },
     {
-        name: "SDE Hiring 2021"
-    },
-    {
-        name: "SDE Hiring 2022"
-    },
-    {
-        name: "SDE Hiring 2023"
-    },
-    {
-        name: "SDE Hiring 2020"
+        name: "SDE Applications 2021"
     },
     {
         name: "SDE Hiring 2021"
+    },
+    {
+        name: "SDE Interviews 2023"
+    },
+    {
+        name: "SDE Offer Letters 2020"
+    },
+    {
+        name: "Marketing Applications 2021"
     },
   ];
 
@@ -88,6 +90,13 @@ const Repo = () => {
                 <p className='text-sm w-20'>{folder.name}</p>
             </div>
             ))}
+        </div>
+
+        <div className='flex flex-col items-center justify-center border-t border-gray-300 pt-5 mt-10'>
+          <ModalBox className="z-40"/>
+          <a href='https://calendly.com/hargun_singh/40min' target='_blank'>
+            <Button variant="contained" style={{backgroundColor:"orange", width:"400px", marginTop:"20px"}} >Schedule an Interview/Meeting</Button>
+          </a>
         </div>
         <ToastContainer />
     </div>
