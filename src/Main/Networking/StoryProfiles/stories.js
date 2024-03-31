@@ -3,7 +3,7 @@ import { MdWorkOutline } from "react-icons/md";
 import { Player } from 'react-simple-player';
 import CustomAudioPlayer from '../CustomAudioPlayer'
 import { FaGraduationCap } from "react-icons/fa";
-
+import video from '../intro-video-1.mp3'
 
 const onDragStart = (ev, story) => {
     ev.dataTransfer.setData("text/plain", JSON.stringify(story));
@@ -14,7 +14,9 @@ const customCollapsedComponent1 = ({ toggleMore, action }) =>
 		<h1 className='text-3xl font-extrabold'>Prerak Gada</h1>
         <p className='flex items-center my-2 text-sm'> - &nbsp; <MdWorkOutline size={15}/> &nbsp; UI/UX Designer at Engaze</p>
         <p className='w-[80%] text-sm my-2'>UI UX 🎨 | Design Thinking 💭 | Graphic Designing 👩‍💻 | Freelancing 🌐</p>
-        <CustomAudioPlayer src='https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3'/>
+        {/* <CustomAudioPlayer src='https://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3'/> */}
+        <CustomAudioPlayer src={video}/>
+        
 
     </div>
 
@@ -224,6 +226,7 @@ const stories = [
 		},
         seeMoreCollapsed: customCollapsedComponent1,
         seeMore: CustomStoryContent1, // when expanded
+        video: video
       },
       {
         url: 'https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',

@@ -36,6 +36,8 @@
     "chart.js": "^4.4.2",
     "firebase": "^10.7.1",
     "formik": "^2.4.5",
+    "fs": "^0.0.1-security",
+    "openai": "^4.31.0",
     "react": "^18.2.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.2.0",
