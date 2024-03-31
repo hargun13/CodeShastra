@@ -22,7 +22,7 @@ const Carousel = ({ textData }) => {
     };
   
     return (
-        <div className="text-xs w-[80%] flex items-center justify-between ">
+        <div className="text-sm w-[80%] flex items-center justify-between ">
             <div className="w-[75%]">
                 <p >{textData[currentIndex]}</p>
             </div>
@@ -50,18 +50,18 @@ const Hero = () => {
 
         <div className='md:flex w-full h-full items-center justify-center mt-5 text-black px-10'>
 
-            <div className='md:w-[55%] px-16 ' >
+            <div className='md:w-[60%] px-16 ' >
                 
-                <div className='flex items-center justify-start text-[10px] gap-3'>
+                <div className='flex items-center justify-start  gap-3'>
                     <p className='bg-[#FF6600] py-1 px-3 rounded-full font-bold text-white'>Jobs</p>
                     <p className='bg-[#FF6600] py-1 px-3 rounded-full font-bold text-white'>Internships</p>
                     <p className='bg-[#FF6600] py-1 px-3 rounded-full font-bold text-white'>Skills</p>
                 </div>
 
-                <h1 className='md:text-[45px] text-5xl font-semibold py-3 '>Empowering Growth </h1> 
-                <h1 className='md:text-[45px] text-5xl font-semibold pt-3 -ml-4'><span className='bg-[#FF6600] px-4 rounded-full text-white'>with SkillX</span></h1>
+                <h1 className='md:text-[45px] text-7xl font-semibold py-3 tracking-widest'>Empowering Growth </h1> 
+                <h1 className='md:text-[45px] text-7xl font-semibold pt-3 -ml-4 tracking-widest'><span className='bg-[#FF6600] px-4 rounded-full text-white'>with SkillX</span></h1>
 
-                <p className="text-sm py-8 pr-40 font-bold my-5">
+                <p className=" py-8 pr-16 font-bold my-5">
                 Engaze introduces groundbreaking compliance solutions, empowering businesses to seamlessly navigate intricate regulatory frameworks and unlock their full potential in tomorrow’s dynamic business environment. 
                 </p>
 
@@ -77,7 +77,7 @@ const Hero = () => {
                 
             </div>
 
-            <div className='md:w-[45%] flex justify-center'>
+            <div className='md:w-[40%] mr-16 flex justify-center'>
                     
                 <Spline scene="https://prod.spline.design/2aGpQfUAMB6aPwhO/scene.splinecode" className='
                 h-full' style={{height:"75vh", width:"60%"}}/>
